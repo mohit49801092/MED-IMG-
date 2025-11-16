@@ -249,6 +249,41 @@ plt.show()
 
 
 
+(([[PRAC 66666])))
+
+
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+from google.colab import files
+
+
+uploaded = files.upload()
+image_path = list(uploaded.keys())[0]
+image = cv2.imdecode(np.frombuffer(uploaded[image_path], np.uint8),
+cv2.IMREAD_GRAYSCALE)
+
+mean_thresh = np.mean(image)
+_, global_thresh = cv2.threshold(image, mean_thresh, 255,
+cv2.THRESH_BINARY)
+
+
+_, otsu_thresh = cv2.threshold(image, 0, 255, cv2.THRESH_BINARY +
+cv2.THRESH_OTSU)
+
+images = [image, global_thresh, otsu_thresh]
+titles = ['Original', 'Global Thresholding', "Otsu's Method"]
+
+
+plt.figure(figsize=(12, 6))
+for i in range(3):
+plt.subplot(1, 3, i+1)
+plt.imshow(images[i], cmap='gray')
+plt.title(titles[i])
+plt.axis('off')
+plt.tight_layout()
+plt.show()
+
 
 
 
