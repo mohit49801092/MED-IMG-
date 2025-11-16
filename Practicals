@@ -1,4 +1,9 @@
-[((1st prac))] 
+
+[[Write a program to obtain statistical parameters of an image and perform basic image
+
+processing techniques.]]
+
+[[PRAC1]]
 
 
 import cv2
@@ -54,9 +59,14 @@ plt.show()
 
 
 
-[((2nd prac ))]
 
 
+
+[[Write a program to perform Gray level transformation and histogram processing using
+
+Histogram Equalization on a medical image.]]
+
+[[prac2]]
 
 
 
@@ -104,6 +114,12 @@ plt.show()
 
 
 
+
+
+
+
+
+AIM-Write a program to perform linear filtering on medical images
 [((3rd prac))]
 
 import cv2
@@ -153,6 +169,12 @@ plt.show()
 
 
 
+
+
+
+
+
+Write a program to perform edge detection on medical images
 [((4th prac))]
 
 
@@ -200,6 +222,15 @@ plt.show()
 
 
 
+
+
+
+
+
+
+
+Write a program to perform geometric transformations such as image rotation, scaling,
+cropping and translation on medical image
 [((5th prac))]
 
 
@@ -249,6 +280,15 @@ plt.show()
 
 
 
+
+
+
+
+
+
+
+Write a program to perform point-to-point transformation to threshold an
+image and evaluate the histogram.
 (([[PRAC 66666])))
 
 
